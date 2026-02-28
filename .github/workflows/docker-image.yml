@@ -26,11 +26,11 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build Docker Image
       run: |
-        docker build -t deliaortiz/docker-graphql:0.0.2 .
+        docker build -t deliaortiz/docker-graphql:0.0.1 .
         docker build -t deliaortiz/docker-graphql:latest .
     - name: Push Docker Image
       run: |
-        docker push deliaortiz/docker-graphql:0.0.2 
+        docker push deliaortiz/docker-graphql:0.0.1 
         docker push deliaortiz/docker-graphql:latest
       
         
