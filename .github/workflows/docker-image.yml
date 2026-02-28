@@ -29,7 +29,7 @@ jobs:
         docker build -t deliaortiz/docker-graphql:0.0.2 .
     - name: Push Docker Image
       run: |
-        docker push -t deliaortiz/docker-graphql:0.0.2 .
+        docker push deliaortiz/docker-graphql:0.0.2 .
       
         
     # - name: Build the Docker image
